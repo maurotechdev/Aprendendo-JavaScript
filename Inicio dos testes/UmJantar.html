@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um jantar</title>
+</head>
+<body>
+    <script>
+        /*
+        Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.
+        */
+
+        // Ler o preço do jantar solicitado
+        // Converter a taxa  do garçon
+        // Informar o valor total a ser pago.
+
+        var jantar = parseFloat(prompt("Informe o preço do jantar"));
+        var taxaGarcon= parseFloat(0.1);
+
+        var Converter= jantar*taxaGarcon
+        var total_a_pagar = jantar + Converter;
+        alert("O valor a pagar é de "+ total_a_pagar);
+
+        //OU
+
+        var jantar = parseFloat(prompt("Digite o preço do jantar"));
+        var total_a_pagar = jantar*0.1
+        var total_a_pagar = total_a_pagar + jantar
+        alert("O valor a pagar é de "+ total_a_pagar.toFixed(1));       
+        
+        
+        // OU
+
+        // lê o valor do jantar
+        var jantar = Number(prompt("Valor do Jantar R$: "));
+        // calcula os dados
+        var garcom = jantar * 0.10;
+        var total = jantar + garcom;
+        // apresenta as respostas
+        alert("Taxa Garçom R$: " + garcom.toFixed(2) + "\nTotal R$: " +
+        total.toFixed(2));
+    </script>
+</body>
+</html>
