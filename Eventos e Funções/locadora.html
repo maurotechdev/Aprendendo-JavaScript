@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Locadora</title>
+</head>
+<body>
+    <!-- 
+    Elaborar um programa para uma Vídeo Locadora, que leia o título e aduração de um filme em minutos. Exiba o título do fillme e converta aduração para horas e minutos.
+    
+    // Ler o título do filme
+    // Ler a duração do filme em minutos
+    // Converter a duração de minutos para horas e minutos
+    // Exibir o título do filme
+    // Exibir a duração do filme em horas e minutos
+    -->
+    <form action="" method="post">
+        <label for="titulo">
+            <h1>Qual é o Título do Filme</h1>
+        </label>
+        <input type="text" name="titulo" id="titulo" required><br>
+        <label for="duracao">
+            <h2>Duração em minutos</h2>
+        </label>
+        <input type="number" name="duracao" id="duracao" required><br><br>
+        
+        <input type="submit" value="Calcular" id="calcular">
+    </form>
+    
+    <p id="responderTitulo" aria-live="polite"></p>
+    <p id="responderDuracao" aria-live="polite"></p>
+
+
+    <script src="js/locadora.js"></script>
+</body>
+</html>
