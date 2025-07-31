@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação Escolar</title>
+</head>
+<body>
+        <!--
+         faz a leitura do nome e das notas de um aluno, apresenta a média e uma mensagem para o aluno:“Parabéns ... Você foi aprovado(a)!” ou, então, “Ops... Você foi reprovado(a).”. A situação de aprovado ou reprovado é denida pela média das notas, que deve ser 7.0 ou superior para aprovação. Caso a nota seja inferior a 7.0, a mensagem indicando a reprovação deve ser exibida. Também faremos nesse exemplo a aplicação de um estilo na mensagem que indica a situação do aluno
+        -->
+    <h1>SITUAÇÃO DE UM ALUNO</h1>
+
+    <form action="#" method="post">
+
+        <label for="nomeAluno">Nome do Aluno</label>
+        <input type="text" name="nomeAluno" id="nomeAluno">
+        <br><br>
+
+        <label for="nota1">Primeira nota</label>
+        <input type="text" name="nota1" id="nota1" placeholder="Digite a primeira nota">
+        <br><br>
+
+        <label for="nota2">Segunda nota</label>
+        <input type="text" name="nota2" id="nota2" placeholder="Digite a segunda nota">
+        <br><br>
+    </form>
+
+    <input type="submit" value="Enviar" id="enviar">
+
+    <h3 id="NotaFinal"></h3>
+    <h3 id="resultado"></h3>
+    <script src="JS/aluno.js"></script>
+</body>
+</html>
