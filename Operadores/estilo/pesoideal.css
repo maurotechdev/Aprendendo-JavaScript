@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    margin-top: 100px;
+    margin-left: 300px;
+    display: flex;
+}
+.first_context img{
+    width:350px; 
+    height:350px;
+}
+.secound_context{
+    margin-left: 50px;
+    line-height: 50px;
+}
+#calculo , #limpar{
+    padding: 10px 30px;
+    font-family: arial;
+    color: darkgrey;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 14px;
+}

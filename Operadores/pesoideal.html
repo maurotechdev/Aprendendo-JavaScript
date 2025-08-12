@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal v1</title>
+    <link rel="stylesheet" href="estilo/pesoideal.css">
+</head>
+<body>
+    <!--
+    O nosso programa vai calcular o peso ideal de uma pessoa. Para isso, foram pesquisados alguns sites sobre o assunto. Em um deles, há a indicação de que o peso ideal de um adulto pode ser calculado a partir das fórmulas: 22 * altura2 (para homens); e 21 * altura2 (para mulheres)
+
+    // Ler o nome da pessoa
+    // Ler a altura da Pessoa
+    // O Sexo da pessoa
+    // Se for Masculino (22 * altura2)
+    //Apresentar o resultado
+    // Se for Feminino (21 * altura2) 
+    //Apresentar o resultado
+    -->
+    <div class="content">
+        <div class="first_context">
+            <img src="img/pexels-alex-green-5699774.jpg" alt="">
+        </div>
+            <div class="secound_context">
+                
+                <h1>O Peso Ideal de Uma Pessoa</h1>
+                
+                <form action="#" method="post">
+                    
+                    <p id="erroNome"></p> 
+                    <label for="nomePessoa">Seu Nome</label>
+                    <input type="text" name="nomePessoa" id="nomePessoa">
+
+                    <p id="erroAltura"></p> 
+                    <label for="altura">Sua Altura</label>
+                    <input type="text" name="altura" id="altura">
+                
+                    <p id="erroSexo"></p> 
+                    <label for="sexo">Sexo:
+                        <input type="radio" name="sexo" id="sexoMacho" value="masculino"> Masculino
+                        <input type="radio" name="sexo" id="sexoFemia" value="feminino"> Feminino
+                    </label>
+                </form>
+
+                <input type="submit" value="Calcular" id="calculo">
+                <input type="button" value="Limpar" id="limpar">
+                <h3 id="apresentarPeso"></h3>
+        </div>
+    </div>
+    <script src="js/pesoideal.js"></script>
+</body>
+</html>

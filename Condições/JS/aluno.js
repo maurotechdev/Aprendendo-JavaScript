@@ -6,7 +6,7 @@ function MediaAluno() {
   var resultNota = (nota1 + nota2) / 2;
     document.getElementById("NotaFinal").textContent = "Média: " + resultNota.toFixed(1);
   if (resultNota >= 7.0) {
-    document.getElementById("resultado").textContent =
+    document.getElementByI ("resultado").textContent =
       "Parabens " + nomeAluno + ", você foi aprovado(a)!";
     document.getElementById("resultado").style.color = "green";
   }else if((resultNota >= 4) && (resultNota<7)){
