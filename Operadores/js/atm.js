@@ -1,10 +1,18 @@
 function exibirsaque (){
     var ValorSaque = Number(document.getElementById("valorSaque").value);
+    
     if(ValorSaque<10){
         alert("Não é possível sacar este valor");
         document.getElementById("valorSaque").focus();
         return;
     }
+
+    if(((ValorSaque%50)%10) != 0){
+        alert("Por conta do valor de saque disponível não é possível fazer saque de: R$ "+ ValorSaque);
+        document.getElementById("valorSaque").focus();
+        return;
+    }
+
     var ResultSaque = Math.floor(ValorSaque/100); 
     document.getElementById("nota100").textContent = "Nota de 100 R$: " + ResultSaque;
 

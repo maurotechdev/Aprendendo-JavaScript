@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Elaborar um programa para simular um parquímetro, o qual leia o valor
+    de  moedas  depositado  em  um  terminal  de  estacionamento  rotativo.  O
+    programa deve informar o tempo de permanência do veículo no local e o
+    troco (se existir), como no exemplo da Figura 3.9. Se o valor for inferior ao
+    tempo  mínimo,  exiba  a  mensagem:  “Valor  Insuciente”.  Considerar  os
+    valores/tempos da Tabela 3.6 (o máximo é 120 min)
+    
+    // Ler o valor a pagar 
+    // Verificar se dar para pagar ou não
+    // Ver quantos minutos terá o de estantancionamento com base no valor dado.
+    -->
+
+    <h1>PARQUÍMETRO</h1>
+
+    <form action="#" method="post">
+        <label for="pagarParque">Informe o valor a pagar</label>
+        <input type="text" name="pagarParque" id="pagarParque">
+    </form>
+    <input type="submit" value="Ver o tempo" id="vertemponoParque">
+
+    <h3 id="minutonoParque"></h3>
+    <h3 id="troco"></h3>
+
+    <script src="js/parquimetro.js"></script>
+
+</body>
+</html>
