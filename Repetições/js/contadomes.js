@@ -3,7 +3,9 @@
 // Registrar todas as contas
 // Apresentar todos os registros de conta
 // Apresentar o número total de contas a pagar e o valor
-let Resposta="";
+let Resposta = "";
+let ValorTotal = 0;
+let QtdContas = 0;
 function ContasdoMes (){
     let Descricao = document.getElementById("descricao").value;
     let Valor = Number(document.getElementById("valor").value);
@@ -28,6 +30,12 @@ function ContasdoMes (){
         document.getElementById("descricao").value="";
         document.getElementById("valor").value="";
         document.getElementById("descricao").focus();
+        
+        QtdContas++;
+        ValorTotal= ValorTotal+Valor;
+        
+        document.getElementById("exibaTotal").textContent="Em "+QtdContas+" contas deves reservar um total de R$: " + ValorTotal.toFixed(2);
+
 }
 let BtnConta = document.getElementById("btnConta");
 BtnConta.addEventListener("click", ContasdoMes);
