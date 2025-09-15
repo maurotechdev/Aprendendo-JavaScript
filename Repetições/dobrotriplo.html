@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Informa que para sair do loop digite 0
+        // Pede um número
+        //Se ele informar 0 sai do loop
+        // Se não continua a informar um número
+        // Verifica se é par
+        // Caso for par apresenta o dobro
+        // Verifica se é impar
+        // Caso for impar apresenta o triplo
+        
+
+        alert("Digite 0 para sair do loop");
+
+        do{
+            let NumeroQualquer= Number(prompt("Número: "));
+            
+            if(NumeroQualquer==0 || isNaN(NumeroQualquer)){
+                
+                let Sair = confirm("Deseja sair?");
+                
+                if(Sair){
+                
+                    break;
+                
+                }else{
+                
+                    continue;
+                
+                }
+            }
+            if(NumeroQualquer%2==0){
+        
+            NumeroQualquer *= 2;
+            confirm("O dobro de 2 é: "+ NumeroQualquer);
+        
+            }else{
+        
+            NumeroQualquer*=3;
+            confirm("O dobro de 3 é: "+ NumeroQualquer);
+        
+            }
+       }while(true); 
+       alert("Bye, Bye...");
+    </script>
+
+</body>
+</html>
